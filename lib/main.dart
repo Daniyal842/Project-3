@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project3/loginscreen.dart';
 import 'package:project3/splashscreen.dart';
 
 void main()
@@ -13,7 +14,22 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Splashscreen(),
+      home: Loginscreen()
+      // Scaffold(
+      //   body:Center(child:Container(
+      //     height:100,
+      //     width:100,
+      //     decoration: BoxDecoration(
+      //       color:Colors.red,
+      //       borderRadius: BorderRadius.only(
+      //         topRight: Radius.circular(50),
+      //         bottomLeft: Radius.circular(50),
+      //         topLeft: Radius.circular(50)
+      //       ),
+      //       border: Border.all()
+      //     )
+      //   ))
+      // )
     );
   }
 }
